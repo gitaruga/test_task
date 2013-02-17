@@ -1,0 +1,60 @@
+*{padding:0;margin:0;background-repeat:no-repeat;}
+body{background-color:#FFF;min-width:1000px;font-size:12px;line-height:14px;color:#000;}
+body, input{font-family:Arial, Helvetica, Sans-serif;}
+img{border-width: 0px;border-style:none;}
+h1,h2,h3,h4,h5,h6{text-decoration:none;}
+p{margin: 10px 0 10px;}
+ul{margin: 0px 0 0px;}
+  ul li{margin: 10px 0 10px; padding-left:20px;}
+a{cursor:pointer;text-decoration:underline;color:#0099CC;}
+  a:hover{text-decoration: none;}
+strong, b{font-weight:bold}
+hr{color:#d80;background-color:#d80;height:1px;border-width:0px;border-style:none;margin: 5px 0px 5px;}
+table{border-collapse:collapse;}td{display: table-cell;}
+.rel{position:relative;}
+.abs{position:absolute;}
+.block{display:block;}
+.centr{margin:0 auto;}
+.left{float:left;}
+.right{float:right;}
+.vis{overflow:visible;}
+.p20{padding-left: 20px;padding-right:20px;}
+.w1000{width: 1000px; margin: 0 auto; background-color: #FFF;}
+div.clr{clear: both;}
+/*        ******* HEADER *******       */  
+#header{position:fixed; width: 100%; top:0;left:0;  }
+	#header .w1000{height: 60px;border-bottom: solid 1px #CCC;box-shadow:0 1px 7px 3px #FFF;background-color: #fff;}
+	#top_menu{height: 30px; background-color: #4B6028; color: #FFF; font-weight: bold; line-height: 30px;}
+		#top_menu menu a{color: #FFF; font-weight: bold;text-decoration: none;}
+		#top_menu menu{display: inline-block;}
+		#top_menu menu li{display: inline-block; float: left; padding-left: 12px;padding-right: 12px;}
+			#top_menu menu li.active a{color: #bcb; cursor: default;}
+			#top_menu menu a:hover{text-shadow: 1px -1px 2px #000; color: #DD9;}
+			#top_menu menu li.active a:hover{text-shadow: none;}
+		#title{float: right; color: #EED; font-weight: normal; text-shadow: 2px -2px 20px #FFF;}
+	#edit_line{font-size:14px; line-height: 20px; padding-top: 5px; padding-bottom: 5px;}
+		#edit_line a{text-decoration: none; display: inline-block;overflow: hidden; padding-left: 6px; padding-right: 6px; border-radius: 2px;}
+			#edit_line a:hover{ box-shadow:0 0 2px 2px #ccc; }
+/*        ******* MAIN *******       */  
+#main_wrapper .w1000{padding-top:70px;border-bottom: solid 1px #ccc;}
+.FORM label{display: block; width: 150px;float: left;}
+	.FORM label span{font-size: 11px;color: #9a9;}
+.FORM input[type=text], .FORM textarea, .FORM select{border: 1px solid #bcb; padding: 0; display: block; float: left; margin-right: 5px;}
+.FORM input[type=text], .FORM textarea{width: 244px; padding-left: 3px;padding-right: 3px;}
+.FORM select{width: 252px;}
+	.formline{padding-top: 2px; padding-bottom: 10px;}
+p.error{color: #F00;}
+#table_list{min-width:200px;}
+	#table_list td, #table_list th{border:solid #aaa 1px;padding: 1px 5px; padding-top: 3px; padding-bottom: 3px;}
+	#table_list th{background-color: #EEE;}
+	#table_list tr:nth-child(2n) td{background-color: #EEF9F0;}
+a.edit, a.del{display: block; width:18px;height:18px; margin-right: 5px; float: left;}
+	a.edit:hover, a.del:hover{border-radius: 2px;box-shadow:0 0 2px 2px #ccc;}
+	a.edit{background-image: url(/public/img/edit.png); background-position: 1px 1px;}
+	a.del{background-image: url(/public/img/del.png);background-position: 1px 1px;}
+.paginator{/*border-top: solid 1px #ccc; */margin-top: 10px; padding-top: 5px; padding-bottom: 5px;}
+	.paginator a, .paginator span.tri{display: block; float: left; margin-right: 7px; padding: 1px 3px; border-radius: 2px; text-decoration: none; }
+	.paginator a.active{font-weight: bold; cursor: default; font-size:14px; text-decoration: underline; }
+	.paginator a:hover{box-shadow:0 0 2px 2px #CCC;}
+		.paginator a.active:hover{box-shadow:none;}
+/*        ******* FOOTER *******       */  
