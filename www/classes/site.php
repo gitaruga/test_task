@@ -9,7 +9,7 @@ class site{
 	
 	function __construct(){
 		$this->FURL();
-		site::$settings['base_path']=dirname(__DIR__);
+		site::$settings['base_path']=dirname(dirname(__FILE__));
 		site::$view = new view();
 		$this->startDB();
 	}

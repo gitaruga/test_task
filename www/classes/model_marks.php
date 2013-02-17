@@ -94,9 +94,14 @@ class model_marks extends model{
 
 	}
 
-	public function getDropdownList(){
+	public function getDropdownList($full=true){
 		
-		$res=mysql_query("SELECT m.`id` 'value', m.`mark` 'title' FROM `wares` w LEFT JOIN `marks` m ON w.`mark_id`=m.`id` GROUP BY m.`mark` ORDER BY `title`");
+		if( $full ){
+			$sql="SELECT `id` 'value', `mark` 'title' FROM `marks` ORDER BY `title`";
+		}else{
+			$sql="SELECT m.`id` 'value', m.`mark` 'title' FROM `wares` w LEFT JOIN `marks` m ON w.`mark_id`=m.`id` GROUP BY m.`mark` ORDER BY `title`";
+		}
+		$res=mysql_query($sql);
 		while ($line=mysql_fetch_assoc($res)) {
 			$line['title']=htmlspecialchars($line['title']);
 			$DropdownList[]=$line;

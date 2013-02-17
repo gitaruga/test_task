@@ -50,7 +50,7 @@ class model_traffic extends model{
 				'selected'=> htmlspecialchars($_POST['type']) );
 
 		$F_ware=array('type'=>'compositeDropdown', 'key'=>'ware_id', 'title'=>'Товар', 'ajax_url'=>'/ajax/wares/composite_list/',
-				'add_key'=>'mark_id', 'add_list'=>$marks->getDropdownList(), 'add_selected'=> (string) (int) $_POST['mark_id'],
+				'add_key'=>'mark_id', 'add_list'=>$marks->getDropdownList(false), 'add_selected'=> (string) (int) $_POST['mark_id'],
 				'selected'=> (string) (int) $_POST['ware_id']);
 		
 		$value_q = isset($_POST['quantity']) ? (float) $_POST['quantity'] : '';

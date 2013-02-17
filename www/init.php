@@ -11,6 +11,6 @@ if (get_magic_quotes_gpc()){
 }//if
 
 function __autoload($classname){
-	include_once __DIR__."/classes/$classname.php";
+	include_once dirname(__FILE__)."/classes/$classname.php";
 }
 ?>
