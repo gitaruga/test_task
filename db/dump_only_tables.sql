@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 17, 2013 at 03:06 PM
+-- Generation Time: Feb 17, 2013 at 03:52 PM
 -- Server version: 5.5.25
 -- PHP Version: 5.3.13
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `test_task`
 --
-CREATE DATABASE `test_task` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `test_task`;
 
 -- --------------------------------------------------------
 
